@@ -30,7 +30,7 @@ const Contact = () => {
     }).then((res) => res.json());
 
     if (res.success) {
-      alert(res.message);
+      alert(res.message)
     }
     input.value="";
   };
