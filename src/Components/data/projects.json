@@ -6,7 +6,7 @@
     "title": "YouTube-Clone",
     "imageSrc":"project-img/pro-img1.png",    
     "description": "This is a project made with complete React js and youtube API",
-    "demo": "https://www.example.com",
+    "demo": "https://you-tube-clone-application.vercel.app/",
     "source": "https://github.com/Piyush-0605/YouTube-Clone-Application"
   },
   {
@@ -14,16 +14,16 @@
     "title": "ChatGPT-Clone",
     "imageSrc":"project-img/pro-img4.png",
     "description": "This is a project made with complete React js and Open AI API " ,
-    "demo": "https://www.example.com",
+    "demo": "https://chat-gpt-clone-gamma-liart.vercel.app/",
      
-    "source":"https://github.com/Piyush-0605/Blog-Application"
+    "source":"https://github.com/Piyush-0605/ChatGPT-Clone"
   },
   {
     "key": 3,
     "title": "Quiz Application",
     "imageSrc":"project-img/pro-img3.png",
     "description": "This is a project made with complete React js.",
-    "demo": "https://www.example.com",
+    "demo": "https://quiz-application-blue-iota.vercel.app/",
     "source": "https://github.com/Piyush-0605/Quiz-Application"
   },
   {
@@ -31,7 +31,7 @@
     "title": "Weather App",
     "imageSrc":"project-img/pro-img2.png",
     "description": "This is a project made with complete React js and using weather API",
-    "demo": "https://www.example.com",
+    "demo": "https://weather-app-beige-zeta-46.vercel.app/",
     "source": "https://github.com/Piyush-0605/Weather-App"
   },
   {
@@ -39,7 +39,7 @@
     "title": "Todo-List",
     "imageSrc":"project-img/pro-img5.png",
     "description": "This is a project made with complete HTML, CSS, Tailwind and JavaScript",
-    "demo": "https://www.example.com",
+    "demo": "https://todo-app-phi-two-31.vercel.app/",
     "source": "https://github.com/Piyush-0605/Todo-App"
   }
 ]
