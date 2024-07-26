@@ -72,7 +72,7 @@ const Contact = () => {
         <CiLinkedin className='icon'/>
         </a>
         <a href="https://github.com/Piyush-0605" target="_blank" className="items"><FaGithub className='icon' /></a>
-        <a href="https://www.google.com" target="_blank" className="items"><FaInstagram className='icon'/></a>
+        <a href="https://www.instagram.com/_piyushchoudhry/?next=%2F&hl=en" target="_blank" className="items"><FaInstagram className='icon'/></a>
         <a href="https://www.facebook.com/profile.php?id=100076823834815" target="_blank" className="items"><CiFacebook className='icon'/></a>
       </div>
     </div>
