@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Contact.css'
 import theme_pattern from '../../assets/theme_pattern.svg'
 import mail_icon from '../../assets/mail_icon.svg'
@@ -10,9 +10,13 @@ import { FaGithub } from "react-icons/fa";
 import { CiFacebook } from "react-icons/ci";
 
 const Contact = () => {
+  const [textinput,setTextinput]=useState("");
+  const [textemail,setTextemail]=useState('');
+  const [textmsg,setTextmsg]=useState('');
 
   const onSubmit = async (event) => {
     event.preventDefault();
+   
     const formData = new FormData(event.target);
 
     formData.append("access_key", "3f37e122-5ed4-4f3e-bb7b-b183b3c2394a");
@@ -29,11 +33,20 @@ const Contact = () => {
       body: json
     }).then((res) => res.json());
 
-    if (res.success) {
-      alert(res.message)
+    // if (res.message) {
+    // alert(res.message);
+    if(textinput=='' || textemail=="" ||textmsg==''){
+        alert('please fill completed form')
     }
-    input.value="";
-  };
+    else{
+        alert(res.message);
+        setTextinput("")
+        setTextemail("")
+        setTextmsg("");
+    }  
+    
+     
+   };
 
   return (
     <div className='contact' id="contact" >
@@ -59,11 +72,11 @@ const Contact = () => {
         </div>
         <form action="" className='contact-right' onSubmit={onSubmit} >
             <label htmlFor="">Your Name</label>
-            <input type="text" placeholder='Enter your name' name='name' />
+            <input type="text" onChange={(e)=>setTextinput(e.target.value)}  value={textinput} placeholder='Enter your name' name='name' />
             <label htmlFor=''>Your Email</label>
-            <input type="text" placeholder='Enter your email' name="email" />
+            <input type="text" onChange={(e)=>setTextemail(e.target.value)}   value={textemail}  placeholder='Enter your email' name="email" />
             <label htmlFor='' >Write your message here</label>
-            <textarea name="message"  rows="4" placeholder='Enter your message' ></textarea>
+            <textarea name="message" onChange={(e)=>setTextmsg(e.target.value)}   value={textmsg} rows="4" placeholder='Enter your message' ></textarea>
             <button type='submit' className="contact-submit">Submit now</button>
         </form>
       </div>
